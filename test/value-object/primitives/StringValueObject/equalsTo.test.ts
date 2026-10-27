@@ -17,7 +17,8 @@ describe('StringValueObject', () => {
     })
 
     it(`should return "false" if the values are not the same`, () => {
-      const firstName = new FirstName(WordMother.random())
+      const firstName = new FirstName(`${name}-diferente`);
+
       const expected = firstName.equalsTo(name);
 
       expect(expected).toBe(false);
