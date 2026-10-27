@@ -11,7 +11,8 @@ on:
 
 
 jobs:
-  lint:
+  lint:   
+    name: Revision de codigo
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
